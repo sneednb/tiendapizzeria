@@ -1,0 +1,160 @@
+/* reset*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fffaf0;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c0392b;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*hero */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #f9e79f;
+}
+
+
+
+/* footer */
+footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* slider pizzas recomendadas*/
+.pizzas-recomendadas {
+    text-align: center;
+    padding: 30px;
+}
+
+.pizzas-recomendadas h2 {
+    color: #c0392b; /* Rojo pizza 🍕 */
+    margin-bottom: 20px;
+}
+
+
+
+/* tarjeta pizza */
+.pizza {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.pizza:hover {
+    transform: scale(1.05); /* efecto zoom */
+}
+
+/* imagen pizza */
+.pizza img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Recorta sin deformar */
+    border-radius: 8px;
+}
+
+/* nombre pizza */
+.pizza h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+/* precio */
+.pizza p {
+    margin: 0;
+    font-weight: bold;
+    color: #27ae60; /* Verde tipo "precio" */
+}
+/* slider pizza recomendada*/
+.pizzas-recomendadas {
+    text-align: center;
+    padding: 30px;
+}
+
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* contenedor de las slide */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* ancho slider */
+.pizza {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: white;
+    padding: 15px;
+}
+
+.pizza img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* botones */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.8);
+}
