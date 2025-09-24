@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Pizzería</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- header-->
+    <header>
+        <div class="logo"><img src="img/logo.png" alt="Logo Pizzería"> Pizzería</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html" class="active">Menú</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--contenido -->
+    <main>
+        <section class="menu">
+            <h1>Menú</h1>
+            <div class="grid-pizzas">
+                <!-- pizza napolitana-->
+                <div class="pizza-card">
+                    <a href="producto.html?producto=napolitana">
+                    <img src="img/napolitana.jpg" alt="Pizza Napolitana">
+                    </a>
+                    <h3>Napolitana</h3>
+                    <p>$7.000</p>
+                    <button>Añadir al carrito</button>
+                </div>
+
+
+
+                <!-- pizza peperoni -->
+                <div class="pizza-card">
+                    <a href="producto.html?producto=pepperoni">
+                    <img src="img/pepperoni.jpg" alt="Pizza Pepperoni">
+                    </a>
+                    <h3>Pepperoni</h3>
+                    <p>$7.000</p>
+                    <button>Añadir al carrito</button>
+                </div>
+
+                <!-- pizza vegetariana -->
+                <div class="pizza-card">
+                     <a href="producto.html?producto=vegetariana">
+                    <img src="img/vegetariana.jpg" alt="Pizza Vegetariana">
+                    </a>
+                    <h3>Vegetariana</h3>
+                    <p>$6.800</p>
+                    <button>Añadir al carrito</button>
+                </div>
+
+                <!-- pizza cuatroquesos-->
+                <div class="pizza-card">
+                     <a href="producto.html?producto=cuatroquesos">
+                    <img src="img/cuatroquesos.jpeg" alt="Pizza Cuatroquesos">
+                    </a>
+                    <h3>Cuatro quesos</h3>
+                    <p>$6.800</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer -->
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

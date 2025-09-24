@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Pizzería</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo"><img src="img/logo.png" alt="Logo Pizzería"> Pizzería</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--contenido -->
+    <main>
+        <section class="contacto">
+            <h1>Contáctanos</h1>
+            <p>Si tienes dudas o quieres hacer un pedido especial, escríbenos:</p>
+
+            <form class="form-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
