@@ -26,15 +26,31 @@
     <main>
         <section class="login">
             <h1>Iniciar Sesión</h1>
-            <form class="form-login">
+            <form class="form-login" method="GET" action="index.html" onsubmit="return validarFormulario(event)">
                 <label for="email">Correo:</label>
-                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required >
 
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" placeholder="Tu contraseña" required>
+                <input type="password" id="clave" name="password" placeholder="Tu contraseña" required minlength="12">
 
                 <button type="submit">Ingresar</button>
             </form>
+
+            <script>
+                function validarFormulario(e){
+                    const email = document.getElementById("email").value.trim();
+
+                    const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if(!regexCorreo.test(email)){
+                    alert("Ingresa un correo valido porfavor")
+                    e.preventDefault();
+                    return false;
+                    }
+
+                    return true;
+                }
+            </script>
+
             <p>¿No tienes cuenta? <a href="signup.html">Regístrate aquí</a></p>
         </section>
     </main>
